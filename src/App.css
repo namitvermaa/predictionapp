@@ -1,0 +1,104 @@
+/* App.css */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 800px;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.player-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.player-column {
+  flex: 1;
+}
+
+.input-row {
+  margin-bottom: 10px;
+}
+
+.input-row label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-row input {
+  width: calc(100% - 20px); /* Adjusted width to include padding */
+  padding: 10px;
+  font-size: 14px;
+}
+
+.generate-button,
+.next-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team {
+  width: 48%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Add overflow: hidden to fix potential margin issues */
+}
+
+@media (min-width: 768px) {
+  .team {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    width: 48%; /* Adjusted width for better spacing on larger screens */
+  }
+}
+
+/* Add this new media query for screens larger than 1400px */
+@media (min-width: 1400px) {
+  .team {
+    width: 48%; /* Adjusted width for better spacing on larger screens */
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Add margin to the bottom of the table */
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px; /* Add margin to the bottom of each cell */
+}
